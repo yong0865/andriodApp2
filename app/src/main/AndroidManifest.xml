@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".Main3Activity"></activity>
+        <activity android:name=".Main3Activity" android:label = "나이 계산기"></activity>
     </application>
 
 </manifest>
