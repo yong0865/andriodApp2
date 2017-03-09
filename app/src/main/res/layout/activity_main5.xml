@@ -23,21 +23,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="150dp"
                 android:text="피자(15000원)"
                 tools:layout_editor_absoluteX="57dp"
                 tools:layout_editor_absoluteY="39dp" />
 
             <EditText
                 android:id="@+id/e1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:ems="10"
                 android:hint="개수 입력"
                 android:inputType="textPersonName"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
                 tools:layout_editor_absoluteX="-8dp"
-                tools:layout_editor_absoluteY="130dp"
-
-                />
+                tools:layout_editor_absoluteY="130dp" />
         </TableRow>
 
         <TableRow
@@ -52,7 +54,7 @@
                 android:text="스파게티(13000원)" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/e2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -72,7 +74,7 @@
                 android:text="샐러드(9000원)" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/e3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -83,36 +85,40 @@
     </TableLayout>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/c1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="멤버쉽 카드 있음(10%할인)" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/b1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="금액 계산하기" />
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="right">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
                 android:text="주문개수" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="0개"
+                android:textColor="@color/colorPrimary" />
         </TableRow>
 
         <TableRow
@@ -126,10 +132,11 @@
                 android:text="주문금액" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="0원"
+                android:textColor="@color/colorPrimary" />
         </TableRow>
 
     </TableLayout>
