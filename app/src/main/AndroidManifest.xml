@@ -22,8 +22,8 @@
             android:label="나이 계산기" />
         <activity
             android:name=".Main4Activity"
-            android:label="온도변환기"
-            ></activity>
+            android:label="온도변환기" />
+        <activity android:name=".Main5Activity" android:label ="레스토랑 메뉴 주문"></activity>
     </application>
 
 </manifest>
