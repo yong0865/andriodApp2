@@ -27,21 +27,33 @@ public class Main5Activity extends AppCompatActivity {
         price = (TextView)findViewById(R.id.price);
         c1 = (CheckBox)findViewById(R.id.c1);
 
+
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String pizza = e1.getText().toString();
                 String spa = e2.getText().toString();
                 String salad = e3.getText().toString();
 
-                int acount = Integer.parseInt(pizza) +Integer.parseInt(spa) +Integer.parseInt(salad);
-                int aprice = Integer.parseInt(pizza)*15000 +Integer.parseInt(spa)*13000 +Integer.parseInt(salad)*9000;
+                if(pizza.getBytes().length == 0) e1.setText("0");{
+                    pizza = e1.getText().toString();
+                }
+                if(spa.getBytes().length == 0) e2.setText("0");{
+                    spa = e2.getText().toString();
+                }
+                if(salad.getBytes().length == 0) e3.setText("0");{
+                    salad = e3.getText().toString();
+                }
 
-                if(c1.isChecked() == true) aprice = aprice*90/100;
+                int acount = Integer.parseInt(pizza) + Integer.parseInt(spa) + Integer.parseInt(salad);
+                int aprice = Integer.parseInt(pizza) * 15000 + Integer.parseInt(spa) * 13000 + Integer.parseInt(salad) * 9000;
 
-                count.setText(acount +"개");
-                price.setText(aprice +"원");
+                if (c1.isChecked() == true) aprice = aprice * 90 / 100;
 
+                count.setText(acount + "개");
+                price.setText(aprice + "원");
             }
         });
 
