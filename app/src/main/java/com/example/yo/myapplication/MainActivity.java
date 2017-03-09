@@ -43,8 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         b4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent ccc = new Intent(MainActivity.this, Main5Activity.class);
-                startActivity(ccc);
+                Intent ddd = new Intent(MainActivity.this, Main5Activity.class);
+                startActivity(ddd);
+            }
+        });
+
+        b5.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent eee = new Intent(MainActivity.this, Main6Activity.class);
+                startActivity(eee);
             }
         });
     }
