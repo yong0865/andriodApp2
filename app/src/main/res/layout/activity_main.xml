@@ -20,7 +20,7 @@
 
     <Button
         android:id="@+id/b1"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="사과가격 계산"
         tools:layout_editor_absoluteX="8dp"
@@ -28,34 +28,34 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="나이계산기"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="93dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteY="164dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="온도변환기"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="164dp" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteY="231dp"
-        tools:layout_editor_absoluteX="16dp" />
+        android:text="레스토랑 메뉴 주문"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteY="304dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="계산기"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="304dp" />
 
 </LinearLayout>
